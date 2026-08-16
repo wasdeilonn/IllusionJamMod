@@ -18,7 +18,7 @@
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <PropertyGroup>
             <ModFilesDir>$(ProjectDir)..\mod\</ModFilesDir>
-            <ZipFile>$(ProjectDir)..\wasdTemplate.polymod</ZipFile>
+            <ZipFile>$(ProjectDir)..\IllusionJamMod.polymod</ZipFile>
 
             <SteamDir Condition="'$(SteamDir)' != ''">$(SteamDir)</SteamDir>
             <SteamDir Condition="'$(SteamDir)' == '' AND '$(OS)' == 'Windows_NT'">C:\Program Files (x86)\Steam</SteamDir>

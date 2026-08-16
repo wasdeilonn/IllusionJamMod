@@ -5,7 +5,7 @@ using Polytopia;
 using Polytopia.Data;
 using PolytopiaBackendBase.Common;
 
-namespace wasdTemplate;
+namespace IllusionJamMod;
 
 public static class Main
 {

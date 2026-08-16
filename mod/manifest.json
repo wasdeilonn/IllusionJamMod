@@ -1,9 +1,9 @@
 {
-    "id": "wasdtemplate",
-    "name": "wasdtemplate",
+    "id": "illusionjammod",
+    "name": "Illusion/Shade unit",
     "version": "1.0",
     "authors": [
-        "wasdtemplate"
+        "wasd_"
     ],
     "dependencies": [
         {
@@ -11,5 +11,5 @@
             "min": "2.10.0"
         }
     ],
-    "description": "wasdtemplate"
+    "description": "made for the 2026 polyjam"
 }
