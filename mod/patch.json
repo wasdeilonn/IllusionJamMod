@@ -3,7 +3,8 @@
         "elyrion": {
             "unitOverrides": {
                 "cloak": "afterimage"
-            }
+            },
+            "startingStars": 100
         }
     },
     "techData": {
@@ -23,6 +24,7 @@
             "cost": 8,
             "hidden": false,
             "unitAbilities": [
+                "independent",
                 "dash",
                 "fly",
                 "sneak",
@@ -43,6 +45,7 @@
             "cost": 8,
             "hidden": true,
             "unitAbilities": [
+                "independent",
                 "dash",
                 "fly",
                 "sneak",
