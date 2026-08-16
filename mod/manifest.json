@@ -1,0 +1,15 @@
+{
+    "id": "wasdtemplate",
+    "name": "wasdtemplate",
+    "version": "1.0",
+    "authors": [
+        "wasdtemplate"
+    ],
+    "dependencies": [
+        {
+            "id": "polytopia",
+            "min": "2.10.0"
+        }
+    ],
+    "description": "wasdtemplate"
+}
