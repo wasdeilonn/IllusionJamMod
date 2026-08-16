@@ -18,7 +18,7 @@
         "afterimage": {
             "health": 50,
             "defence": 10,
-            "movement": 3,
+            "movement": 2,
             "range": 1,
             "attack": 10,
             "cost": 8,
@@ -31,15 +31,17 @@
                 "stiff",
                 "static",
                 "infiltrate",
-                "illusion"
+                "illusion",
+                "scout"
             ],
             "weapon": 4,
-            "idx": -1
+            "idx": -1,
+            "prefab": "cloak"
         },
         "afterimagefake": {
             "health": 50,
             "defence": 10,
-            "movement": 3,
+            "movement": 2,
             "range": 1,
             "attack": 10,
             "cost": 8,
@@ -52,14 +54,33 @@
                 "stiff",
                 "static",
                 "infiltrate",
-                "illusion"
+                "illusion",
+                "scout"
             ],
             "weapon": 4,
-            "idx": -1
+            "idx": -1,
+            "prefab": "cloak"
         }
     },
     "unitAbility": {
         "illusion": {
+            "idx": -1
+        }
+    },
+    "unitEffectData": {
+        "fake":{
+            "idx": -1
+        },
+        "radiant": {
+            "idx": -1,
+            "color": "1,0.3,0,0.3",
+            "mult": {
+                "defence": 100
+            }
+        }
+    },
+    "actionType": {
+        "applyradiantaction": {
             "idx": -1
         }
     }
