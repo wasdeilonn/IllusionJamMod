@@ -1,6 +1,6 @@
 {
     "id": "illusionjammod",
-    "name": "Illusion/Shade unit",
+    "name": "TextNuker 9000 NEO PLUS",
     "version": "1.0",
     "authors": [
         "wasd_"
@@ -15,5 +15,5 @@
             "min": "2.1.4.4"
         }
     ],
-    "description": "made for the 2026 polyjam"
+    "description": "You have the illusion of downloading a simple mod that nukes all the text in the game when in reality its exactly that but with a shitty stupid unit for elyrions diplomacy tech."
 }
