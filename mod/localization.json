@@ -1,3 +1,26 @@
 {
-    
+    "unit_names_afterimage": {
+        "English": "Radiance"
+    },
+    "unit_names_afterimagefake": {
+        "English": "Radiance"
+    },
+    "unit_names_afterimage__darkelf": {
+        "English": "Shade"
+    },
+    "unit_names_afterimagefake__darkelf": {
+        "English": "Shade"
+    },
+    "unit_abilities_illusion": {
+        "English": "ILLUSION"
+    },
+    "tooltip_ability_illusion": {
+        "English": "This unit may or may not be real. Kill it to either kill the fake too, or make the real unit Radiant. So Radiant in fact it burns the physical unit, making it Invisible. Obviously."
+    },
+    "actionbox_unit_radiant": {
+        "English": "Radiant"
+    },
+    "actionbox_unit_fake": {
+        "English": "Fake"
+    }
 }

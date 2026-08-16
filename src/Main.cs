@@ -215,6 +215,7 @@ public static class Main
         if (unit == null) return;
 
         unit.RemoveEffect(EnumCache<UnitEffect>.GetType("radiant"));
+        unit.attacked = false;
     }
 
     [HarmonyPrefix]
