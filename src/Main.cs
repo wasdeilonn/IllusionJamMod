@@ -4,6 +4,7 @@ using UnityEngine;
 using Polytopia;
 using Polytopia.Data;
 using PolytopiaBackendBase.Common;
+using Polibrary.PolyScript;
 
 namespace IllusionJamMod;
 
@@ -13,7 +14,6 @@ public static class Main
     public static void Load(ManualLogSource logger)
     {
         modLogger = logger;
-        modLogger.LogInfo("wasdtemplate");
         Harmony.CreateAndPatchAll(typeof(Main));
     }
 }

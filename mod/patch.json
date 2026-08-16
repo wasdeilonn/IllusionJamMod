@@ -1,0 +1,63 @@
+{
+    "tribeData": {
+        "elyrion": {
+            "unitOverrides": {
+                "cloak": "afterimage"
+            }
+        }
+    },
+    "techData": {
+        "basic": {
+            "unitUnlocks": [
+                "+afterimagefake"
+            ]
+        }
+    },
+    "unitData": {
+        "afterimage": {
+            "health": 50,
+            "defence": 10,
+            "movement": 3,
+            "range": 1,
+            "attack": 10,
+            "cost": 8,
+            "hidden": false,
+            "unitAbilities": [
+                "dash",
+                "fly",
+                "sneak",
+                "stiff",
+                "static",
+                "infiltrate",
+                "illusion"
+            ],
+            "weapon": 4,
+            "idx": -1
+        },
+        "afterimagefake": {
+            "health": 50,
+            "defence": 10,
+            "movement": 3,
+            "range": 1,
+            "attack": 10,
+            "cost": 8,
+            "hidden": true,
+            "unitAbilities": [
+                "dash",
+                "fly",
+                "sneak",
+                "stiff",
+                "static",
+                "infiltrate",
+                "illusion"
+            ],
+            "weapon": 4,
+            "idx": -1
+        }
+    },
+    "unitAbility": {
+        "illusion": {
+            "idx": -1
+        }
+    }
+}
