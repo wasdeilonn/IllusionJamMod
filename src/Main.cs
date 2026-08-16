@@ -76,6 +76,33 @@ public static class Main
     }
 
     [HarmonyPostfix]
+    [HarmonyPatch(typeof(ActionUtils), nameof(ActionUtils.TrainUnit))]
+    private static void TrainUnitPatch(GameState gameState, PlayerState playerState, TileData tile, UnitData unitData)
+    {
+        if (unitData.type == RealUnit)
+        {
+            tile.unit.AddEffect(EnumCache<UnitEffect>.GetType("real"));
+        }
+        if (unitData.type == FakeUnit)
+        {
+            tile.unit.AddEffect(EnumCache<UnitEffect>.GetType("fake"));
+        }
+    }
+
+    [HarmonyPostfix]
+    [HarmonyPatch(typeof(Localization), nameof(Localization.Get), typeof(string), typeof(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray<Il2CppSystem.Object>))]
+    private static void ObfuscateEffects(object[] __args, ref string __result)
+    {
+        if (GameManager.LocalPlayer.tribe != TribeType.Elyrion) return;
+
+        string s = (string)__args[0];
+        if (s == "actionbox.unit.real" || s == "actionbox.unit.fake")
+        {
+            __result = Localization.Get("actionbox.unit.unknownstate");
+        }
+    }
+
+    [HarmonyPostfix]
     [HarmonyPatch(typeof(MoveAction), nameof(MoveAction.Execute))]
     private static void MoveActionPatch(GameState state, MoveAction __instance)
     {
@@ -240,6 +267,7 @@ public static class Main
         }
     }
 
+    //dont know, wont know, dont know, wont know, goddamn, shit the bed
     /*[HarmonyPostfix]
     [HarmonyPatch(typeof(UnitState), nameof(UnitState.SerializeDefault))]
     private static void UnitSerialize(Il2CppSystem.IO.BinaryWriter writer, int version, UnitState __instance)

@@ -68,6 +68,9 @@
         }
     },
     "unitEffectData": {
+        "real":{
+            "idx": -1
+        },
         "fake":{
             "idx": -1
         },

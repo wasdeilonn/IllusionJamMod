@@ -20,6 +20,12 @@
     "actionbox_unit_radiant": {
         "English": "Radiant"
     },
+    "actionbox_unit_unknownstate": {
+        "English": "???"
+    },
+    "actionbox_unit_real": {
+        "English": "Real"
+    },
     "actionbox_unit_fake": {
         "English": "Fake"
     }
