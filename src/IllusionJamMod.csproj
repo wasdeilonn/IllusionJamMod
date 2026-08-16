@@ -14,7 +14,12 @@
     <ItemGroup>
         <PackageReference Include="PolyMod" Version="*" />
     </ItemGroup>
-
+    <ItemGroup>
+        <Reference Include="Polibrary">
+            <HintPath>.\Polibrary.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <PropertyGroup>
             <ModFilesDir>$(ProjectDir)..\mod\</ModFilesDir>
